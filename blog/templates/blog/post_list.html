@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> XAOLER's blog </title>
+    </head>
+    <body>
+        <div>
+            <h1>XAOLER's Blog </h1>
+            <p><em>Whose is this blog?</em></p>
+            <strong>Yes it is my blog!!!</strong>
+            <a href="http://vk.com/xaoler">Press here</a>
+        </div>
+
+    {% for post in posts %}
+        <div>
+            <p>published: {{post.pubkished_date }}</p>
+            <h1><a href="">{{post.title }}</a></h1>
+            <p>{{post.text|linebreaks}}</p>
+        </div>
+    {% endfor %}
+    </body>
+</html>
